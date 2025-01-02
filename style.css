@@ -1,0 +1,472 @@
+/* General Reset */
+* {
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
+  box-sizing: border-box; /* Includes padding and border in element width/height */
+}
+
+/* Body Styling */
+body {
+  font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+  line-height: 1.6; /* Spacing for readability */
+  background-color: #f5f0e6; /* Neutral background color */
+}
+
+/* Navigation Bar */
+.navbar {
+  font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+  display: flex; /* Aligns items horizontally */
+  justify-content: flex-end; /* Aligns items to the right */
+  padding: 20px; /* Adds padding around the navbar */
+  background-color: transparent; /* Keeps the navbar background clear */
+  position: absolute; /* Makes it stay on top of the content */
+  width: 100%; /* Spans the full width */
+  z-index: 10; /* Ensures it stays on top of other elements */
+}
+
+.nav-links {
+  display: flex; /* Aligns navigation links horizontally */
+  list-style: none; /* Removes default bullet points */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li a {
+  text-decoration: none; /* Removes underline from links */
+  font-size: 18px; /* Adjusts font size */
+  font-weight: 600; /* Makes text bold */
+  color: black; /* Default text color */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.nav-links li a:hover {
+  color: gray; /* Changes color when hovered */
+}
+
+/* Hero Section */
+.hero {
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  height: 100vh; /* Takes full screen height */
+  background: url('./assets/background.svg') no-repeat center center/cover; /* Sets the SVG background */
+  color: rgb(63, 7, 43); /* White text on the hero */
+  text-align: center; /* Centers text */
+  position: relative; /* Ensures child elements stay in place */
+}
+
+.hero-content h1 {
+  font-size: 5rem; /* Large heading */
+  margin-bottom: 20px; /* Adds space below heading */
+  font-family: 'Roboto Mono', monospace; /* Default font for body */
+}
+
+.hero-content p {
+  font-size: 2rem; /* Smaller tagline text */
+  font-family: 'Playfair Display', serif; /* Stylish font for the main name */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .hero-content p {
+      font-size: 1rem; /* Adjust tagline size */
+  }
+
+  .nav-links {
+      gap: 10px; /* Smaller gap between links */
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+  background-color: #fad3db; /* Light neutral background */
+  margin: 0;
+  padding: 0;
+}
+/* About Section */
+.about {
+  padding: 5rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fad3db;
+}
+
+/* About Container for Text and Image */
+.about-container {
+  display: flex; /* Aligns text and image side by side */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Vertically aligns content */
+  padding: 5rem 10%; /* Adds spacing around the section */
+  background-color: #fad3db; /* Light pink background */
+  gap: 2rem; /* Adds space between the text and the image */
+}
+
+/* About Text Section */
+.about-text {
+  flex: 1; /* Allows the text section to take up available space */
+  max-width: 600px; /* Limits the maximum width */
+  text-align: left; /* Aligns text to the left */
+  margin-right: 2rem; /* Adds space to the right of the text */
+}
+
+.about-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #004d00; /* Green color for heading */
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #333; /* Dark gray for text */
+  margin-bottom: 2rem;
+}
+
+/* Resume Button */
+.resume-button {
+  display: inline-block;
+  background-color: #004d00; /* Dark green background */
+  color: #fff; /* White text */
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #006600; /* Lighter green on hover */
+}
+
+/* About Image Section */
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%; /* Circular image */
+  border: 5px solid #e6e6e6; /* Soft border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text {
+      max-width: 100%;
+  }
+
+  .about-image {
+      max-width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-button {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .about-image {
+      max-width: 80%;
+  }
+}
+
+/* Skills Section */
+.skills {
+  padding: 4rem 2rem;
+  background-color: #ffe3e3;
+  text-align: center;
+  margin-top: 4rem
+}
+
+.skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0d6d39;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Individual skill item */
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.skill span {
+  width: 20%;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 75%;
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #0d6d39;
+  border-radius: 0.5rem;
+  transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image {
+    max-width: 60%;
+  }
+
+  .skills h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+}
+
+/* General Styling for the Section */
+.featured-projects {
+  padding: 5rem 10%; /* Add spacing around the section */
+  background-color: #f5f0e6; /* Light neutral background */
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0d6d39; /* Green color */
+  margin-bottom: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Individual Project */
+.project {
+  display: flex; /* Aligns image and description horizontally */
+  gap: 2rem; /* Space between image and description */
+  margin-bottom: 4rem; /* Space between projects */
+  align-items: center; /* Vertically aligns image and text */
+}
+
+
+/* Project Image Pop Effect */
+.project-image img {
+  width: 200px; /* Set image width */
+  height: auto;
+  border-radius: 10px; /* Soft border radius */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Pop Effect on Hover or Tap */
+.project-image img:hover,
+.project-image img:active {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow for "pop" effect */
+}
+
+/* Project Description */
+.project-description {
+  flex: 1; /* Allows the description to take the remaining space */
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-description h2 {
+  font-size: 2rem;
+  color: #004d00; /* Green color for title */
+  margin-bottom: 1rem;
+}
+
+.project-description p {
+  font-size: 1rem;
+  color: #333; /* Dark gray for text */
+  line-height: 1.8; /* Spacing for readability */
+  margin-bottom: 1.5rem;
+}
+
+/* Button for Project Link */
+.project-button {
+  display: inline-block;
+  background-color: #0d6d39; /* Dark green */
+  color: black;
+  text-decoration: none; /* Removes underline */
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #006600; /* Slightly lighter green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+      flex-direction: column; /* Stacks the image and description vertically */
+      text-align: center;
+  }
+
+  .project-image img {
+      max-width: 80%; /* Adjust image size for smaller screens */
+  }
+}
+/* Featured Projects Section */
+.featured-projects {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Individual Project */
+.project {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+  max-width: 500px;
+  text-align: left;
+}
+
+.project-description h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.project-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.project-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-button:hover {
+  color: black;
+}
+
+/* View More Projects Section */
+.more-projects {
+  text-align: center; 
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.more-projects a {
+  color: #0d6d39;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.more-projects a:hover {
+  color: #006600;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f5f0e6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #555;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}

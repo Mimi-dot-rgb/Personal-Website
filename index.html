@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for navigation */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <!-- Links in the navigation -->
+        <ul class="nav-links">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing page hero section -->
+    <section id="home" class="hero">
+      <!-- Main content on the landing page -->
+      <div class="hero-content">
+        <h2 class="hero-title">Welcome to my portfolio</h2>
+        <h1 style="font-family: 'Playfair Display', serif;">Kamrun Mim</h1>
+        <p style="font-family: 'Roboto Mono', monospace;">A Computer Science and Data Science student</p>
+    </div>
+    </section>
+  <!-- About Me Section -->
+  <section id="resume">
+      <div class="about-container">
+          <!-- Left Section: About Me Text -->
+          <div class="about-text">
+              <h1>About me</h1>
+              <p>
+              I am a junior at Connecticut College, majoring in Computer Science with two minors in Statistics & Economics. I am a software engineer with a keen interest in cybersecurity and machine learning. In my downtime, I enjoy writing about thought-provoking topics like freedom and state power, experimenting in the kitchen (I’ve been told I’m quite the chef), and documenting my college journey through journaling.    
+              </p>
+              <!-- Resume Button -->
+              <a href="./assets/Mim Kamrun tech-Resume (1).pdf" class="resume-button" target="_blank">View my resume</a>
+          </div>
+          <!-- Right Section: Profile Picture -->
+          <div class="about-image">
+              <img src="./assets/profile-pic.png" alt="Kamrun Mim's Profile Picture">
+          </div>
+      </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Java</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Data Visualization</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- Soft Skills Section -->
+<section id="skills" class="skills">
+  <h1>Soft Skills</h1>
+  <div class="skills-container">
+      <div class="skill">
+          <span>Problem Solving</span>
+          <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <span>Communication</span>
+          <div class="progress-bar">
+              <div class="progress" style="width: 95%;"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <span>Time Management</span>
+          <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <span>Teamwork</span>
+          <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <span>Adaptibility</span>
+          <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Featured Projects Section --> 
+<section id="projects">
+  <h1 class="section-title">Featured Projects</h1>
+
+  <!-- First Project -->
+  <div class="project">
+      <!-- Image of the Project -->
+      <div class="project-image">
+          <img src="./assets/project1.png" alt="Project 1 Screenshot">
+      </div>
+      <!-- Description of the Project -->
+      <div class="project-description">
+          <h2>Brainwave Analysis using Machine Learning with Muse Headset and Splunk</h2>
+          <p>
+            This research paper explores the analysis of brainwaves using machine learning techniques to predict activities or mental states.
+            The study combines the utilization of the Muse EEG headset and the Splunk platform for data collection, preprocessing, model building, and real-time prediction. 
+            The objective is to develop a machine learning system that accurately classifies educational activities based on EEG signals from the Muse headset. 
+            Additionally, the research investigates the effectiveness of the approach in differentiating between active and passive learning activities.
+          </p>
+          <a href="https://drive.google.com/drive/folders/1JsFDcsC7gLup7vPTzAh3iIiVJzJb7ouP?usp=drive_link" class="project-button" target="_blank">View Project</a>
+      </div>
+  </div>
+
+  <!-- Second Project -->
+  <div class="project">
+      <!-- Image of the Project -->
+      <div class="project-image">
+          <img src="./assets/project2.png" alt="Project 2 Screenshot">
+      </div>
+      <!-- Description of the Project -->
+      <div class="project-description">
+          <h2>Kaaj List</h2>
+          <p>
+            In Bangla Kaaj means work, to me the word Kaaj sounds better than "Work". So, I designed "Kaaj List" is a conceptual digital planner designed to make task management and scheduling intuitive and engaging for students. 
+            With customizable features like sticky notes, task lists, and calendar integration, Kaaj List transforms productivity into a seamless experience.
+          </p>
+          <a href="https://github.com/Mimi-dot-rgb/Kaaj-List" class="project-button" target="_blank">View Project</a>
+      </div>
+  </div>
+  <!-- Second Project -->
+  <div class="project">
+    <!-- Image of the Project -->
+    <div class="project-image">
+        <img src="./assets/project3.png" alt="Project 2 Screenshot">
+    </div>
+    <!-- Description of the Project -->
+    <div class="project-description">
+        <h2>Process Scheduling and Memory Management System</h2>
+        <p>
+          This project simulates a basic operating system, focusing on process scheduling and memory management. It progresses through four phases, each adding advanced features like scheduling algorithms and memory allocation techniques.
+        </p>
+        <a href="https://github.com/Mimi-dot-rgb/Process-Scheduling-and-Management-System" class="project-button" target="_blank">View Project</a>
+    </div>
+    <!-- View More Projects Section -->
+</div>
+</section>
+<!-- View More Projects Section -->
+    <section class="more-projects">
+        <p>View more of my projects <a href="more-projects.html" class="view-more-link">here</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/mim-kamrun-nahar-2112401b3/" target="_blank">🔗</a>
+            <a href="mailto:kmim@conncoll.edu" target="_blank">📧</a>
+            <a href="https://github.com/" target="_blank">🐱</a>
+        </div>
+        <p>© 2025 Kamrun Mim. All rights reserved.</p>
+    </footer>
+</body>
+</html>

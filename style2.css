@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width and height */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Playfair Display', serif; /* Sets default font for the body */
+    background-color: #f5f0e6; /* Light neutral background */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex; /* Aligns items horizontally */
+    justify-content: space-between; /* Separates left and right links */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 20px; /* Adds spacing inside navbar */
+    background-color: transparent; /* Transparent navbar background */
+    font-size: 1rem; /* Default font size for links */
+}
+
+/* Left Side Links */
+.nav-left a {
+    margin-right: 20px; /* Adds space between links on the left */
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Default link color */
+    font-weight: bold; /* Makes text bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.nav-left a:hover {
+    color: gray; /* Changes color when hovered */
+}
+
+/* Right Side Links */
+.nav-right a {
+    margin-left: 20px; /* Adds space between links on the right */
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Default link color */
+    font-weight: bold; /* Makes text bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.nav-right a:hover {
+    color: gray; /* Changes color when hovered */
+}
+
+/* Personal Projects Section */
+#personal-projects {
+    padding: 4rem 2rem; /* Adds spacing around the section */
+    background-color: #f5f0e6; /* Matches the page background */
+    font-family: 'Playfair Display', serif; /* Matches font style */
+    text-align: center; /* Centers the content */
+}
+
+.section-title {
+    font-size: 2.5rem; /* Large font size for titles */
+    margin-bottom: 2rem; /* Space below the title */
+    color: #0d6d39; /* Green title color */
+}
+
+#writing-projects {
+    padding: 4rem 2rem; /* Adds spacing around the section */
+    background-color: #f5f0e6; /* Matches the page background */
+    font-family: 'Playfair Display', serif; /* Matches font style */
+    text-align: center; /* Centers the content */
+}
+
+.section-title {
+    font-size: 2.5rem; /* Large font size for titles */
+    margin-bottom: 2rem; /* Space below the title */
+    color: #0d6d39; /* Green title color */
+}
+/* Project Container */
+.project {
+    display: flex; /* Aligns image and description horizontally */
+    align-items: center; /* Vertically aligns content */
+    justify-content: center; /* Centers content horizontally */
+    gap: 2rem; /* Space between the image and description */
+    margin-bottom: 4rem; /* Space between projects */
+}
+
+/* Project Image Pop Effect */
+.project-image img {
+    max-width: 300px; /* Restricts image width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Hover Effect on Image */
+.project-image img:hover,
+.project-image img:active {
+    transform: scale(1.1); /* Enlarges image slightly */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhances shadow */
+}
+
+/* Project Description */
+.project-details {
+    max-width: 500px; /* Restricts the description width */
+    text-align: left; /* Aligns text to the left */
+}
+
+.project-details h3 {
+    font-family: 'Playfair Display', serif; /* Title font */
+    font-size: 1.8rem; /* Title size */
+    color: #0d6d39; /* Green title color */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.project-details p {
+    font-family: 'Roboto Mono', monospace; /* Description font */
+    font-size: 1rem; /* Description size */
+    color: #333; /* Gray text color */
+    margin-bottom: 1rem; /* Space below description */
+}
+
+/* Project Link Button */
+.project-link {
+    text-decoration: none; /* Removes underline */
+    font-family: 'Roboto Mono', monospace; /* Font style */
+    font-size: 1rem; /* Font size */
+    color: #0d6d39; /* Green color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.project-link:hover {
+    color: #006600; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Stacks image and description vertically */
+        text-align: center; /* Centers text */
+    }
+
+    .project-image img {
+        margin: 0 auto; /* Centers the image */
+    }
+}
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f5f0e6;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #555;
+  }
+  
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
